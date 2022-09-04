@@ -7,6 +7,8 @@ import { Card } from '../models/card.model';
   styleUrls: ['./stars.component.css'],
 })
 export class StarsComponent implements OnInit {
+  mouseOverItemIndex = 0;
+  starsCounter = 5;
   constructor() {}
 
   @Input() card!: Card;
